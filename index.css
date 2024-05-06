@@ -1,0 +1,288 @@
+:root {
+  --azulEScuro: #101823;
+  --azulEScuroForte: #0a1420;
+  --azulClaro: #145278;
+  --amarelo: #e89a47;
+  --branco: #fffaf5;
+  --cinza: #1e1e1e;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--azulEScuro);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* background: rgb(217, 139, 79);
+background: linear-gradient(
+  90deg,
+  rgba(217, 139, 79, 1) 0%,
+  rgba(216, 169, 129, 1) 100%
+); */
+
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin-top: -150px;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.avatar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.containerText {
+  margin-left: 50px;
+}
+
+.containerText h4 {
+  color: var(--amarelo);
+}
+
+.containerText h1 {
+  margin-top: 10px;
+  color: var(--branco);
+}
+
+.containerText h3 {
+  margin-top: 10px;
+  color: var(--amarelo);
+}
+
+.containerText h2 {
+  margin-top: 10px;
+  color: var(--branco);
+}
+
+.containerButtons {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 200px;
+  border-radius: 20px;
+  background: #101823;
+  box-shadow: 15px 15px 30px #0a1017, -15px -15px 30px #16202f;
+  background-color: var(--azulEScuro);
+}
+
+.containerButtons h3 {
+  text-align: center;
+  color: var(--branco);
+  margin-bottom: 20px;
+}
+
+.buttons {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons a {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: var(--branco);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+  background: rgb(217, 139, 79);
+  background: linear-gradient(
+    90deg,
+    rgba(217, 139, 79, 1) 0%,
+    rgba(216, 169, 129, 1) 100%
+  );
+}
+
+.buttons a:hover {
+  background: var(--amarelo);
+}
+
+.buttons i {
+  margin-right: 10px;
+}
+
+.containerLoc {
+  margin-top: 80px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: var(--azulEScuroForte);
+}
+
+.floatContainers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textLeftLoc {
+  height: 350px;
+  width: 600px;
+}
+
+.textLeftLoc h1 {
+  color: var(--branco);
+  padding-top: 80px;
+  margin-left: 50px;
+}
+
+.textLeftLoc p {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: var(--branco);
+}
+
+.locContainerFloatLeft {
+  margin-top: -50px;
+  margin-left: 17%;
+  width: 600px;
+  height: 100px;
+  background: #101823;
+  box-shadow: 15px 15px 30px #0a1017, -15px -15px 30px #16202f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.textOneFloatLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.textOneFloatLeft i {
+  color: var(--branco);
+  font-size: 20px;
+}
+
+.textOneFloatLeft h4 {
+  margin-left: 10px;
+  color: var(--branco);
+  font-size: 15px;
+}
+
+.textTwoFloatLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.textTwoFloatLeft i {
+  color: var(--branco);
+  font-size: 20px;
+}
+
+.textTwoFloatLeft h4 {
+  margin-left: 10px;
+  color: var(--branco);
+  font-size: 15px;
+}
+
+.locContainerFloatRight {
+    justify-content: center;
+  margin-top: -250px;
+  margin-right: 10%;
+  width: 430px;
+  height: 120px;
+  background-color: var(--amarelo);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.textOneFloatRight {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.textOneFloatRight i {
+  color: var(--branco);
+  margin-right: 10px;
+}
+
+.textOneFloatRight h5 {
+  color: var(--branco);
+}
+
+.textTwoFloatRight {
+    margin-top: 10px;
+  margin-left: 20px;
+}
+
+.textTwoFloatRight h6 {
+    margin-top: 8px;
+  color: var(--branco);
+}
+
+.textTwoFloatRight h3 {
+    font-weight: 800;
+  color: var(--cinza);
+}
+
+.containerPlant {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: center; /* Adicionando alinhamento centralizado ao texto */
+}
+
+.containerPlant h1 {
+    color: var(--branco);
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px; /* Largura das imagens */
+    height: 500px; /* Altura das imagens */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 300%; /* Ajuste conforme o número de imagens */
+}
+
+.carousel img {
+    width: 100%; /* Garante que as imagens se ajustem ao contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    vertical-align: top;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo das setas */
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
