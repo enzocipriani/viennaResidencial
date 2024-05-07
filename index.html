@@ -123,12 +123,14 @@
             <div class="containerPlant">
                 <h1>
                     Plantas de <span
-                        style="color: #e89a47; font-weight: 800;">53,23m²</span> a
-                    <span style="color: #e89a47; font-weight: 800;">63,55m²</span>
+                        style="color: #e89a47; font-weight: 800;">53,23m²</span>
+                    a
+                    <span
+                        style="color: #e89a47; font-weight: 800;">63,55m²</span>
                 </h1>
-    
+
                 <div class="slider">
-    
+
                     <div class="slide slide2">
                         <img src="./1x/plantasHum/1 (1).png" alt="Imagem 2">
                     </div>
@@ -171,7 +173,7 @@
                     <div class="slide slide16">
                         <img src="./1x/plantasHum/1 (14).png" alt="Imagem 16">
                     </div>
-    
+
                     <div class="navigation">
                         <button class="btn prev">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -181,17 +183,22 @@
                         </button>
                     </div>
                 </div>
-    
+
                 <div class="buttonConsultor">
                     <a href>
                         <h4>FALAR C/ CONSULTOR</h4>
                     </a>
                 </div>
-    
+
             </div>
-    
+
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img id="modal-img" class="modal-content" src="" alt="">
+              </div>
+
             <div class="containerDifferentials">
-                
+
                 <div class="titleDiff">
                     <h7>
                         Diferenciais
@@ -210,35 +217,35 @@
                                 Academia
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-water-ladder"></i>
                             <h4>
                                 Piscina
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-champagne-glasses"></i>
                             <h4>
                                 Salão de Festas
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-dice"></i>
                             <h4>
                                 Brinquedoteca
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-computer"></i>
                             <h4>
                                 Coworking
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-car"></i>
                             <h4>
@@ -246,7 +253,7 @@
                             </h4>
                         </div>
                     </div>
-    
+
                     <div class="column2">
                         <div class="itens">
                             <i class="fa-solid fa-square-parking"></i>
@@ -254,21 +261,21 @@
                                 Vagas Livres
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-elevator"></i>
                             <h4>
                                 Elevadores
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-solid fa-universal-access"></i>
                             <h4>
                                 Acessibilidade
                             </h4>
                         </div>
-    
+
                         <div class="itens">
                             <i class="fa-regular fa-face-smile"></i>
                             <h4>
@@ -286,30 +293,171 @@
             </div>
         </div>
 
-
         <div class="containerGallery">
             <div class="titleGallery">
                 <h1>Galeria de fotos</h1>
             </div>
 
             <div class="containerSwitch">
-                <a id="PERSPECTIVAS" class="switch" onclick="showContent('PERSPECTIVAS')">
-                    <H3>
+                <a id="PERSPECTIVAS" class="switch"
+                    onclick="showContent('PERSPECTIVAS')">
+                    <h3>
                         PERSPECTIVAS
-                    </H3>
+                    </h3>
                 </a>
                 <a id="PLANTAS" class="switch" onclick="showContent('PLANTAS')">
-                    <H3>
+                    <h3>
                         PLANTAS
-                    </H3>
+                    </h3>
                 </a>
             </div>
+        </div>
 
-        <div style="height: 600px; background-color: bisque;">
+        <div class="apresentacao-container">
+
+            <div class="apresentacao-fade">
+                
+                <img src="./1x/banner-home.png" alt="slide">
+               
+            </div>
+        
+            <div class="apresentacao-fade">
+               
+                <img src="./1x/banner.png" alt="Slide">
+                
+            </div>
+        
+            <div class="apresentacao-fade">
+              
+                <img src="./1x/img-banner.png" alt="Slide">
+              
+            </div>
+        
+            <a class="anterior" onclick="maisApresentacoes(-1)">&#10094;</a>
+            <a class="proxima" onclick="maisApresentacoes(1)">&#10095;</a>
+        
+        </div>
+        
+    
+
+        <div class="containerVideo">
+            <div class="leftVideo">
+                <img src="./1x/predio.png" alt="predio">
+            </div>
+
+            <div class="rightVideo">
+                <h1>
+                    <span style="color: #e89a47;">Vídeo </span>Institucional
+                </h1>
+                <iframe width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/_fBitUtg-Lk?si=01GkCYTsfg4VpSbw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="containerLoc">
+            <div class="containerTextLoc">
+                <div class="textsLoc">
+                    <h6>Localização</h6>
+                    <h2>Localização<br>privilegiada</h2>
+                </div>
+                <p>
+                    Localizado na região central da cidade, a apenas 550 metros
+                    da Avenida Paulista. Conta com uma infraestrutura repleta de
+                    serviços e comércios em seu entorno, além de estar ao lado
+                    de importantes vias que dão fácil acesso a toda a cidade.
+                </p>
+            </div>
+        </div>
+
+        <div class="iframeMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.574836303102!2d-44.23718329999999!3d-21.129510099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1c7cda2b07073%3A0x8c15141eaf6a4f34!2sR.%20Batista%20de%20Castro%2C%2028%20-%20Vila%20Santa%20Terezinha%2C%20S%C3%A3o%20Jo%C3%A3o%20del%20Rei%20-%20MG%2C%2036305-190!5e0!3m2!1spt-BR!2sbr!4v1715088252826!5m2!1spt-BR!2sbr"
+                width height style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="containerFichaTecnica">
+            <img src="./1x/predioFicha.png" alt="ficha">
+            <div class="textFicha">
+                <p>
+                    <span style="font-size: 20px;"><b>Ficha
+                            Técnica</b></span><br><br>
+                    <b>Endereço:</b> Rua Batista de castro, 28, Matosinhos, São
+                    João
+                    del Rei, MG<br>
+                    <b>Área do terreno:</b> 510,86 m²<br>
+                    <b>Área construída:</b> 6.714,30 m²<br>
+                    <b>Área rooftop:</b> 355 m²<br>
+                    <b>Número de unidades:</b> 60 apartamentos<br>
+                    <b>Número de vagas de carro:</b> 47<br>
+                    <b>Número de vagas de moto:</b> 33<br>
+                    <b>Número de elevadores:</b> 2<br>
+                    <b>Realização:</b> Incorporadora Evler<br>
+                    <b>Construtora:</b> Construtora Felipão Ltda<br>
+                    <b>Projeto arquitetônico:</b> Studio Arqo Arquitetura<br>
+                    <b>Projeto de decoração das áreas comuns:</b> Studio Arqo
+                    Arquitetura<br>
+                    <b>Execução Incorporação:</b> Himob Assessoria
+                    Imobiliária<br>
+                    <b>Número Registro de Incorporação:</b> protocolo
+                    nº321.341<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="containerForms">
+            <div class="titleContato">
+                <h6>Entre me contato</h6>
+                <h2>Envie seu contato<br>para entrar em contato!</h2>
+            </div>
+            <div class="inputContainer">
+                <div class="group">
+                    <input placeholder="Nome" type="text" class="input" required>
+                    <input placeholder="Email" type="email" class="input" required>
+                </div>
+                <div class="group">
+                    <input placeholder="Telefone" type="tel" class="input" required>
+                    <select placeholder="Motivo" class="input" required>
+                        <option value="" disabled selected>Interesse</option>
+                        <option value="1" >Investir</option>
+                        <option value="2">Morar</option>
+                    </select>
+                </div>
+
+                <button type="submit">
+                    <h2>Enviar</h2>
+                </button>
+                
+            </div>
 
         </div>
 
-
+        <footer class="footerPage">
+            <div class="footer">
+                <div class="logovienna">
+                    <img src="./1x/logo-vienna.png" alt="">
+                </div>
+                <div class="redes">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="logoevler">
+                    <img src="./1x/logo-evler.png" alt="">
+                </div>
+            </div>
+            <p>
+                © Copyright 2024 <span style="color: #e89a47;">Residencial Vienna</span>
+            </p>
+        </footer>
 
         <script type="text/javascript">
             
