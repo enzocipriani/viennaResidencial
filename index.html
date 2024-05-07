@@ -27,6 +27,79 @@
 
     </head>
     <body>
+
+        <dialog id="formPop">
+
+            <div class="containerFormsPop">
+
+                <a onclick="closeForms();"><i class="fa-solid fa-xmark"></i></a>
+
+                <div class="titleContato">
+                    <h6>Entre me contato</h6>
+                    <h2>Envie seu contato<br>para entrar em contato!</h2>
+                </div>
+                <div class="inputContainer">
+                    <div class="group">
+                        <input placeholder="Nome" type="text" class="input"
+                            required>
+                        <input placeholder="Email" type="email" class="input"
+                            required>
+                    </div>
+                    <div class="group">
+                        <input placeholder="Telefone" type="tel" class="input"
+                            required>
+                        <select placeholder="Motivo" class="input" required>
+                            <option value disabled selected>Interesse</option>
+                            <option value="1">Investir</option>
+                            <option value="2">Morar</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" onclick="openForms()">
+                        <h2>Enviar</h2>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </dialog>
+
+        <header class="menu">
+            <ul>
+                <li class="menuTitulo">
+                    <p>
+                        Compre seu imóvel
+                    </p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li>
+                    <a href="#" class="menuBotaoWpp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>
+                            WhatsApp
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menuLigamos">
+                        <i class="fa-solid fa-headset"></i>
+                        <p>
+                            Ligamos pra você
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menuEmail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>
+                            Email
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
         <div class="banner">
             <img src="./1x/banner-home.png" alt class="background-image">
 
@@ -46,8 +119,10 @@
                         São João del Rei - MG
                     </h3>
                     <h2>
-                        Studios+ e 1 Dorm.+<br>
-                        com pé-direito de 3,70m
+                        Apartamento de dois<br>
+                        quartos com suíte,<br>
+                        varanda e vaga na garagem
+
                     </h2>
                 </div>
             </div>
@@ -74,15 +149,12 @@
                     Apartamento no Matosinhos
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas ut mollis odio. Ut leo lectus, lobortis vestibulum
-                    est
-                    at, interdum posuere nunc. Sed sit amet magna dignissim,
-                    molestie lacus sed, consequat neque. Nunc semper ac nulla
-                    vel
-                    fringilla. Suspendisse dictum velit quis tellus vulputate,
-                    quis
-                    scelerisque purus mollis.
+                    Conforto e comodidade em um único lugar. O residencial
+                    acomoda uma área de lazer completa, portaria 24h, 2
+                    elevadores com acesso a todos pavimentos, vagas livres,
+                    acabamento em gesso e porcelanato e uma fachada moderna e
+                    inovadora!
+
                 </p>
             </div>
         </section>
@@ -92,13 +164,14 @@
                 <div class="textOneFloatLeft">
                     <i class="fa-solid fa-bed"></i>
                     <h4>
-                        Studios+e 1 Dorm.+
+                        Apartamento de 2 quartos com suíte,<br>varanda e vaga na
+                        garagem
                     </h4>
                 </div>
                 <div class="textTwoFloatLeft">
                     <i class="fa-solid fa-vector-square"></i>
                     <h4>
-                        21 a 29 m²
+                        53,23m² a 63,55m²
                     </h4>
                 </div>
             </div>
@@ -259,9 +332,9 @@
                                 Estacionamentos
                             </h4>
                         </div>
-                    </div>
+                    
 
-                    <div class="column2">
+                    
                         <div class="itens">
                             <i class="fa-solid fa-square-parking"></i>
                             <h4>
@@ -673,10 +746,14 @@
                     <h2>Localização<br>privilegiada</h2>
                 </div>
                 <p>
-                    Localizado na região central da cidade, a apenas 550 metros
-                    da Avenida Paulista. Conta com uma infraestrutura repleta de
-                    serviços e comércios em seu entorno, além de estar ao lado
-                    de importantes vias que dão fácil acesso a toda a cidade.
+                    <b>Residencial Vienna</b>, seu novo endereço, bem perto de tudo!
+                    Com a localização estratégica a apenas 100m do pátio
+                    Matosinhos o empreendimento oferece facilidade de acesso a
+                    bares, restaurantes, supermercados, farmácias, padarias,
+                    casa lotéricas, bancos, escolas e muito mais! Resolva tudo o
+                    que precisa do seu dia a dia em menos de 10 minutos e
+                    desfrute de um dos bairros mais valorizados de São João del
+                    Rei.
                 </p>
             </div>
         </div>
@@ -740,7 +817,7 @@
                     </select>
                 </div>
 
-                <button type="submit">
+                <button type="submit" onclick="openForms()">
                     <h2>Enviar</h2>
                 </button>
 
@@ -824,6 +901,34 @@
             }
 
             switchGallery('slidesRenders');
+
+            function openForms() {
+                const pop = document.getElementById('formPop');
+
+                if (pop) {
+
+                    pop.showModal();
+
+                    pop.addEventListener('click', function(event) {
+                    var rect = pop.getBoundingClientRect();
+                    var isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height &&
+                        rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+                    if (!isInDialog) {
+                        pop.close();
+                    }
+                    });
+
+                }
+
+            }
+
+            function closeForms() {
+
+            const pop = document.getElementById('formPop');
+
+            pop.close();
+
+            }
 
         </script>
 
