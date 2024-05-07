@@ -560,6 +560,15 @@ background: linear-gradient(
   animation-duration: 2s;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animacao-slide {
+  animation: slide 1s ease forwards;
+}
+
 .containerSwitch {
   margin-top: 20px;
   display: flex;
