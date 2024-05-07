@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vienna Residencial</title>
 
+        <link rel="icon" href="./1x/favicon.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -195,7 +196,12 @@
             <div id="modal" class="modal">
                 <span class="close">&times;</span>
                 <img id="modal-img" class="modal-content" src="" alt="">
-              </div>
+            </div>
+
+            <div id="modalx" class="modalx">
+                <span class="closez">&times;</span>
+                <img id="modal-imgx" class="modal-content" src="" alt="">
+            </div>
 
             <div class="containerDifferentials">
 
@@ -316,25 +322,35 @@
         <div class="apresentacao-container">
 
             <div class="apresentacao-fade">
-                
-                <img src="./1x/banner-home.png" alt="slide">
-               
+
+                <div class="imgBanContainer">
+                    <img src="./1x/render_27.png" alt="slide">
+                </div>
+                               
             </div>
         
             <div class="apresentacao-fade">
                
-                <img src="./1x/banner.png" alt="Slide">
+                <div class="imgBanContainer">
+                    <img src="./1x/render_27.png" alt="slide">
+                </div>
                 
             </div>
         
             <div class="apresentacao-fade">
               
-                <img src="./1x/img-banner.png" alt="Slide">
+                <div class="imgBanContainer">
+                    <img src="./1x/render_27.png" alt="slide">
+                </div>
               
             </div>
         
-            <a class="anterior" onclick="maisApresentacoes(-1)">&#10094;</a>
-            <a class="proxima" onclick="maisApresentacoes(1)">&#10095;</a>
+            <a class="anterior" onclick="maisApresentacoes(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <a class="proxima" onclick="maisApresentacoes(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
         
         </div>
         

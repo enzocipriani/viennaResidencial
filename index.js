@@ -33,6 +33,8 @@ nextButton.addEventListener('click', () => {
 goToSlide(currentSlide);
 
 
+
+//popup
 var modal = document.getElementById("modal");
 var img = document.getElementById("modal-img");
 var slidesX = document.querySelectorAll(".slide img");
@@ -55,6 +57,34 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var modalx = document.getElementById("modalx");
+var imgx = document.getElementById("modal-imgx");
+var slidesXx = document.querySelectorAll(".imgBanContainer img");
+
+slidesXx.forEach(slide => {
+  slide.onclick = function(){
+    modalx.style.display = "block";
+    imgx.src = this.src;
+  }
+});
+
+var spanx = document.getElementsByClassName("closez")[0];
+
+spanx.onclick = function() {
+  modalx.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalx) {
+    modalx.style.display = "none";
+  }
+}
+
+
+
+
+
 
 //galery 
 let apresentacoes = document.querySelectorAll('.apresentacao-fade');
