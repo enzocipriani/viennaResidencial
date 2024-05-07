@@ -694,7 +694,7 @@ background: linear-gradient(
   margin-left: 25%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .containerFichaTecnica img {
@@ -711,7 +711,7 @@ background: linear-gradient(
   box-shadow: 15px 15px 30px #0a1017, -15px -15px 30px #16202f;
   display: flex;
   flex-direction: row;
-  margin-bottom: 200px;
+  margin-bottom: 130px;
   background-color: var(--azulEScuroForte);
   margin-right: 15%;
   margin-left: 15%;
