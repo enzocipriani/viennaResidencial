@@ -550,12 +550,12 @@ background: linear-gradient(
 }
 
 .anterior {
-  left: 10%;
+  left: 20%;
   border-radius: 10px;
 }
 
 .proxima {
-  right: 10%;
+  right: 20%;
   border-radius: 10px;
 }
 
