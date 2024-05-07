@@ -1,0 +1,17 @@
+vamos fazer (ou pelo menos tentar) {
+	- menu lateral:
+			ligamos para voce
+			whatsapp 
+			email
+	- adicionar galeria de localização 
+	- carrousel completo igual da you 
+	- aumentar plantas e deixar uma linha dos itens 
+	- faltando popup do formulario 
+}
+
+
+AGUARDAR { 
+	- formulario
+	- alteração de duas fotos da planta que esta com fundo
+	- trocar textos que estao errados
+}
