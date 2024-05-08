@@ -3,9 +3,9 @@ vamos fazer (ou pelo menos tentar) {
 			ligamos para voce
 			whatsapp 
 			email
-	- adicionar galeria de localização 
+	OK - adicionar galeria de localização 
 	- carrousel completo igual da you 
-	- aumentar plantas e deixar uma linha dos itens 
+	OK - aumentar plantas e deixar uma linha dos itens 
 	OK - faltando popup do formulario 
 }
 

@@ -7,6 +7,19 @@
   --cinza: #08121d;
 }
 
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--azulEScuroForte); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--amarelo); /* Cor da barra de rolagem */
+  border-radius: 0px; 
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--azulEScuro);
@@ -151,6 +164,13 @@ background: linear-gradient(
   text-align: center;
   background-color: #23bd3b;
   font-size: 12px;
+  transition: 0.4s;
+}
+
+.menuBotaoWpp:hover {
+  transition: 0.4s;
+  background-color: #158025;
+  height: 110px;
 }
 
 .menuBotaoWpp i {
@@ -172,7 +192,13 @@ background: linear-gradient(
   text-align: center;
   background-color: var(--amarelo);
   font-size: 12px;
-  
+  transition: 0.4s;
+}
+
+.menuLigamos:hover {
+  transition: 0.4s;
+  background-color: #b37635;
+  height: 110px;
 }
 
 .menuLigamos p {
@@ -184,6 +210,8 @@ background: linear-gradient(
   margin-bottom: 5px;
   font-size: 29px;
 }
+
+
 
 .menuEmail {
   margin-left: 20px;
@@ -199,6 +227,13 @@ background: linear-gradient(
   text-align: center;
   background-color: var(--amarelo);
   font-size: 12px;
+  transition: 0.4s;
+}
+
+.menuEmail:hover {
+  transition: 0.4s;
+  background-color: #b37635;
+  height: 110px;
 }
 
 .menuEmail i {
@@ -806,6 +841,164 @@ background: linear-gradient(
   box-shadow: 15px 15px 30px #0a1017, -15px -15px 30px #16202f;
   width: 100%;
   height: 500px;
+}
+
+.containerGalerryPhoto {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  
+  margin-bottom: 40px;
+}
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 45%;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  background: var(--branco);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+  background: #666;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+
+.slide-button i {
+  color: var(--amarelo);
+}
+
+.slide-button i {
+  color: var(--amarelo);
+}
+
+.slider-wrapper .image-list {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 30px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  width: 225px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.slider-wrapper .image-list .image-itemx {
+ 
+  width: 225px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.containerTextoGalleryPhoto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--azulEScuroForte);
+  padding: 13px;
+  width: 225px;
+  bottom: 0;
+  
+}
+
+.containerTextoGalleryPhoto i {
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--amarelo);
+}
+
+.containerTextoGalleryPhoto h5 {
+  font-size: 12px;
+  color: var(--amarelo);
+}
+
+.containerGalerryPhoto .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: var(--amarelo);
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+  /* .slider-wrapper .slide-button {
+    display: none !important;
+  } */
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
 }
 
 .containerFichaTecnica {
