@@ -61,8 +61,16 @@ window.onclick = function (event) {
 var modalx = document.getElementById("modalx");
 var imgx = document.getElementById("modal-imgx");
 var slidesXx = document.querySelectorAll(".image-itemxX img");
+var slidesXy = document.querySelectorAll(".image-itemxXy img");
 
 slidesXx.forEach((slide) => {
+  slide.onclick = function () {
+    modalx.style.display = "block";
+    imgx.src = this.src;
+  };
+});
+
+slidesXy.forEach((slide) => {
   slide.onclick = function () {
     modalx.style.display = "block";
     imgx.src = this.src;
