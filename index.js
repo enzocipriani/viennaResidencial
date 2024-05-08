@@ -60,7 +60,7 @@ window.onclick = function (event) {
 
 var modalx = document.getElementById("modalx");
 var imgx = document.getElementById("modal-imgx");
-var slidesXx = document.querySelectorAll(".imgBanContainer img");
+var slidesXx = document.querySelectorAll(".image-itemxX img");
 
 slidesXx.forEach((slide) => {
   slide.onclick = function () {

@@ -843,14 +843,23 @@ background: linear-gradient(
   height: 500px;
 }
 
+
+
+.containerBigGalerryPhoto {
+  width: 100%;
+}
 .containerGalerryPhoto {
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
-  
-  margin-bottom: 40px;
 }
 .slider-wrapper {
+  position: relative;
+}
+.slider-wrapperX {
+  position: relative;
+}
+.slider-wrapperXy {
   position: relative;
 }
 .slider-wrapper .slide-button {
@@ -871,22 +880,80 @@ background: linear-gradient(
   border-radius: 10px;
   transform: translateY(-50%);
 }
+.slider-wrapperX .slide-buttonX {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 60px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  background: var(--cinza);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateY(-50%);
+}
+.slider-wrapperXy .slide-buttonXy {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 60px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  background: var(--cinza);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateY(-50%);
+}
 .slider-wrapper .slide-button:hover {
   background: #666;
+}
+.slider-wrapperX .slide-buttonX:hover {
+  background: #666;
+  transition: 0.2s;
+}
+.slider-wrapperXy .slide-buttonXy:hover {
+  background: #666;
+  transition: 0.2s;
 }
 .slider-wrapper .slide-button#prev-slide {
   left: -25px;
   display: none;
 }
+.slider-wrapperX .slide-buttonX#prev-slideX {
+  left: 32%;
+}
+.slider-wrapperXy .slide-buttonXy#prev-slideXy {
+  left: 32%;
+}
 .slider-wrapper .slide-button#next-slide {
   right: -25px;
+}
+.slider-wrapperX .slide-buttonX#next-slideX {
+  right: 32%;
+}
+.slider-wrapperXy .slide-buttonXy#next-slideXy {
+  right: 32%;
 }
 
 .slide-button i {
   color: var(--amarelo);
 }
-
-.slide-button i {
+.slide-buttonX i {
+  color: var(--amarelo);
+}
+.slide-buttonXy i {
   color: var(--amarelo);
 }
 
@@ -901,20 +968,62 @@ background: linear-gradient(
   overflow-x: auto;
   scrollbar-width: none;
 }
+.slider-wrapperX .image-listX {
+  height: 540px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 40px;
+  font-size: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapperXy .image-listXy {
+  height: 540px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 40px;
+  font-size: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
+
 .slider-wrapper .image-list .image-item {
   width: 225px;
   height: 330px;
   object-fit: cover;
 }
+.slider-wrapperX .image-listX .image-itemX {
+  width: 960px;
+  height: 540px;
+  object-fit: cover;
+}
+.slider-wrapperXy .image-listXy .image-itemXy {
+  width: 960px;
+  height: 540px;
+  object-fit: cover;
+}
 
 .slider-wrapper .image-list .image-itemx {
- 
   width: 225px;
   height: 330px;
   object-fit: cover;
+}
+.slider-wrapperX .image-listX .image-itemxX {
+  width: 960px;
+  height: 540px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.slider-wrapperXy .image-listXy .image-itemxXy {
+  width: 960px;
+  height: 540px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .containerTextoGalleryPhoto {
@@ -925,7 +1034,6 @@ background: linear-gradient(
   padding: 13px;
   width: 225px;
   bottom: 0;
-  
 }
 
 .containerTextoGalleryPhoto i {
@@ -944,6 +1052,7 @@ background: linear-gradient(
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 .slider-scrollbar .scrollbar-track {
   background: #ccc;
@@ -982,7 +1091,6 @@ background: linear-gradient(
 }
 
 
-
 @media only screen and (max-width: 1023px) {
   /* .slider-wrapper .slide-button {
     display: none !important;
@@ -996,10 +1104,14 @@ background: linear-gradient(
     width: 280px;
     height: 380px;
   }
+
   .slider-scrollbar .scrollbar-thumb {
     width: 20%;
   }
 }
+
+
+
 
 .containerFichaTecnica {
   background-color: var(--amarelo);
@@ -1111,8 +1223,8 @@ input:hover {
 
 .modal {
   display: none;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 10;
   padding-top: 100px;
   left: 0;
   top: 0;
