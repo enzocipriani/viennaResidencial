@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--amarelo); /* Cor da barra de rolagem */
+  background-color: var(--amarelo);
   border-radius: 0px;
 }
 
@@ -126,10 +126,6 @@ background: linear-gradient(
   list-style-type: none;
   padding: 0;
 }
-
-/* .menu ul li {
-  
-} */
 
 .menu ul li a {
   color: #fff;
@@ -1039,7 +1035,6 @@ background: linear-gradient(
   animation: 0.5s ease-in 0s 1 fadeIn;
 }
 
-
 .containerTextoGalleryPhoto {
   display: flex;
   flex-direction: row;
@@ -1385,7 +1380,6 @@ input:hover {
   }
 
   .botaoWppMobile i {
-    
     font-size: 30px;
     color: var(--cinza);
   }
