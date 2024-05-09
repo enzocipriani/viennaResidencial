@@ -104,6 +104,10 @@ background: linear-gradient(
 
 */
 
+.botaoWppMobile {
+  display: none;
+}
+
 .menu {
   z-index: 2;
   position: fixed;
@@ -1027,6 +1031,15 @@ background: linear-gradient(
   cursor: pointer;
 }
 
+#slidesRenders {
+  animation: 0.5s ease-in 0s 1 fadeIn;
+}
+
+#slidesPlantas {
+  animation: 0.5s ease-in 0s 1 fadeIn;
+}
+
+
 .containerTextoGalleryPhoto {
   display: flex;
   flex-direction: row;
@@ -1090,7 +1103,6 @@ background: linear-gradient(
   top: -10px;
   bottom: -10px;
 }
-
 
 .containerFichaTecnica {
   background-color: var(--amarelo);
@@ -1354,6 +1366,30 @@ input:hover {
 }
 
 @media screen and (max-width: 908px) {
+  .botaoWppMobile {
+    animation: pulse 2s ease 0s 150 normal none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--amarelo);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 30;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+
+  .botaoWppMobile i {
+    
+    font-size: 30px;
+    color: var(--cinza);
+  }
+
   .menu {
     display: none;
   }
@@ -1367,7 +1403,7 @@ input:hover {
   .bannerMobile {
     display: flex;
   }
-  
+
   .bannerMobile img {
     height: 100%;
     width: 100%;
@@ -1402,7 +1438,7 @@ input:hover {
     margin-left: 5%;
     margin-right: 5%;
     width: auto;
-    
+
     height: 300px;
     background: #101823;
     box-shadow: 15px 15px 30px #0a1017, -15px -15px 30px #16202f;
@@ -1410,7 +1446,6 @@ input:hover {
   }
 
   .containerText h4 {
-    
     color: var(--amarelo);
   }
 
@@ -1566,13 +1601,13 @@ input:hover {
     margin-top: 10px;
     margin-left: 20px;
   }
-  
+
   .textTwoFloatRight h6 {
     text-align: center;
     margin-top: 8px;
     color: var(--branco);
   }
-  
+
   .textTwoFloatRight h3 {
     text-align: center;
     font-weight: 800;
@@ -1595,7 +1630,7 @@ input:hover {
     margin-top: 80px;
     text-align: center;
   }
-  
+
   .containerPlant h1 {
     margin-left: 5%;
     margin-right: 5%;
@@ -1639,7 +1674,7 @@ input:hover {
     display: flex;
     flex-direction: row;
   }
-  
+
   .buttonConsultor a {
     align-items: center;
     display: flex;
@@ -1664,20 +1699,20 @@ input:hover {
     flex-direction: column;
     padding-bottom: 40px;
   }
-  
+
   .titleDiff {
     width: auto;
     padding: 15px;
     background-color: var(--amarelo);
     margin-bottom: 30px;
   }
-  
+
   .titleDiff h7 {
     margin-left: 30px;
     color: var(--branco);
     font-size: 20px;
   }
-  
+
   .titleDiff h2 {
     margin-left: 30px;
     color: var(--branco);
@@ -1688,23 +1723,23 @@ input:hover {
     display: flex;
     flex-direction: row;
   }
-  
+
   .itens i {
     margin-right: 10px;
     font-size: 25px;
     color: var(--amarelo);
   }
-  
+
   .itens h4 {
     font-size: 22px;
     color: var(--branco);
   }
-  
+
   .containerDiff1 {
     display: flex;
     flex-direction: row;
   }
-  
+
   .column1 {
     margin-left: 45px;
     margin-right: 0px;
@@ -1736,7 +1771,6 @@ input:hover {
     align-content: center;
   }
 
-
   .containerVideo {
     animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
     width: 100%;
@@ -1747,9 +1781,8 @@ input:hover {
   }
 
   .leftVideo {
-   display: none;
+    display: none;
   }
-  
 
   .rightVideo {
     height: 330px;
@@ -1759,14 +1792,13 @@ input:hover {
     margin-right: auto;
     background-color: var(--azulEScuroForte);
   }
-  
+
   .rightVideo h1 {
     text-align: center;
     margin-top: 40px;
     margin-left: 0px;
     color: var(--branco);
   }
-  
 
   .leftVideo img {
     display: none;
@@ -1806,21 +1838,20 @@ input:hover {
     background-color: var(--azulEScuroForte);
   }
 
-
   .textsLoc h6 {
     color: var(--amarelo);
   }
-  
+
   .textsLoc h2 {
     color: var(--branco);
   }
-  
+
   .containerTextLoc p {
     color: var(--branco);
     font-size: 14px;
     margin-left: 5%;
   }
-  
+
   .textsLoc {
     margin-bottom: 30px;
     display: flex;
@@ -1850,13 +1881,12 @@ input:hover {
   .containerGalerryPhoto {
     margin-left: 5%;
     margin-right: 5%;
-    width: 90%; 
+    width: 90%;
     height: 400px;
     align-items: center;
   }
 
-
-.slider-wrapper .image-list {
+  .slider-wrapper .image-list {
     height: 400px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -1866,11 +1896,11 @@ input:hover {
     margin-bottom: 0px;
     overflow-x: auto;
     scrollbar-width: none;
-}
+  }
 
   .slider-wrapper .image-list::-webkit-scrollbar {
-  display: none;
-}
+    display: none;
+  }
 
   .slider-wrapper .image-list .image-itemx {
     width: 225px;
@@ -1934,8 +1964,6 @@ input:hover {
     transform: translateY(-50%);
   }
 
-
-
   .slider-wrapperX .image-listX {
     height: 216px;
     width: 384px;
@@ -1982,7 +2010,6 @@ input:hover {
     border-radius: 10px;
     transform: translateY(-50%);
   }
-
 
   .slider-wrapperXy .image-listXy {
     height: 216px;
@@ -2061,11 +2088,11 @@ input:hover {
     flex-direction: column;
     margin-bottom: 40px;
   }
-  
+
   .containerFichaTecnica img {
     width: 100%;
   }
-  
+
   .textFicha {
     width: 100%;
     background-color: var(--amarelo);
@@ -2093,20 +2120,19 @@ input:hover {
   .titleContato {
     padding-left: 0px;
   }
-  
+
   .titleContato h6 {
     color: var(--amarelo);
   }
-  
+
   .titleContato h2 {
     color: var(--branco);
   }
-  
+
   .inputContainer {
     margin-left: 0px;
-    
   }
-  
+
   .group {
     margin-top: 20px;
     display: flex;
@@ -2114,7 +2140,7 @@ input:hover {
     align-items: center;
     position: relative;
   }
-  
+
   .input {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -2131,11 +2157,11 @@ input:hover {
     color: #0d0c22;
     transition: 0.3s ease;
   }
-  
+
   .input::placeholder {
     color: #9e9ea7;
   }
-  
+
   .input:focus,
   input:hover {
     outline: none;
@@ -2143,7 +2169,7 @@ input:hover {
     background-color: #fff;
     box-shadow: 0 0 0 4px rgb(232 154 71 / 10%);
   }
-  
+
   .inputContainer button {
     cursor: pointer;
     margin-top: 20px;
@@ -2162,7 +2188,7 @@ input:hover {
     align-items: center;
     justify-content: center;
   }
-  
+
   .inputContainer button:hover {
     background: var(--amarelo);
   }
@@ -2176,7 +2202,7 @@ input:hover {
     background-color: var(--azulEScuroForte);
     color: var(--branco);
   }
-  
+
   .footer {
     height: 300px;
     padding-left: 5%;
@@ -2186,18 +2212,18 @@ input:hover {
     flex-direction: column;
     justify-content: space-around;
   }
-  
+
   .logovienna {
     text-align: center;
     align-content: center;
     width: 100%;
   }
-  
+
   .logovienna img {
     margin-top: 20px;
     height: 60px;
   }
-  
+
   .redes {
     display: flex;
     flex-direction: row;
@@ -2208,22 +2234,22 @@ input:hover {
     font-size: 40px;
     color: var(--branco);
   }
-  
+
   .redes i {
     font-size: 27px;
     padding: 20px;
   }
-  
+
   .redes a {
     text-decoration: none;
     color: var(--branco);
     transition: 0.2s;
   }
-  
+
   .redes a:hover {
     color: var(--amarelo);
   }
-  
+
   .logoevler {
     text-align: center;
     align-content: center;
@@ -2248,7 +2274,7 @@ input:hover {
   #formPop::backdrop {
     background-color: rgb(0 0 0 / 0.7);
   }
-  
+
   .containerFormsPop {
     width: 100%;
     height: 480px;
@@ -2262,7 +2288,6 @@ input:hover {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 40px;
-    
   }
   .containerFormsPop i {
     color: var(--branco);
@@ -2274,13 +2299,12 @@ input:hover {
   }
 
   .containerSwitch {
-    
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .containerSwitch a {
     padding: 20px;
     align-content: center;
@@ -2290,12 +2314,9 @@ input:hover {
     height: 55px;
     background-color: var(--amarelo);
   }
-  
+
   .switch {
     cursor: pointer;
     transition: 0.3s;
   }
-
-  
-
 }
