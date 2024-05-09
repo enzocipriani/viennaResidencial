@@ -249,6 +249,10 @@ background: linear-gradient(
   width: 100%;
 }
 
+.bannerMobile {
+  display: none;
+}
+
 .container {
   animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
   margin-top: -150px;
@@ -638,7 +642,6 @@ background: linear-gradient(
 }
 
 .apresentacao-container {
-  
   width: 100%;
   height: 700px;
   position: relative;
@@ -1350,18 +1353,29 @@ input:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 908px) {
   .menu {
     display: none;
   }
+
   .banner img {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bannerMobile {
+    display: flex;
+  }
+  
+  .bannerMobile img {
     height: 100%;
     width: 100%;
   }
 
   .container {
     animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
-    margin-top: -150px;
+    margin-top: -284px;
     display: flex;
     margin-left: 8%;
     margin-right: 8%;
@@ -1700,6 +1714,9 @@ input:hover {
     margin-top: 20px;
     width: 384px;
     height: 216px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -1707,6 +1724,9 @@ input:hover {
   }
 
   .apresentacao-containerx {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     width: 384px;
     height: 216px;
@@ -1732,10 +1752,11 @@ input:hover {
   
 
   .rightVideo {
-    margin-left: 5%;
-    margin-right: 5%;
     height: 330px;
-    width: 350px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--azulEScuroForte);
   }
   
@@ -1760,8 +1781,9 @@ input:hover {
     padding: 1px;
     background-color: #e89a47;
     margin-top: 60px;
-    margin-left: 7%;
-    margin-right: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .containerTextLoc {
@@ -1807,7 +1829,7 @@ input:hover {
 
   .iframeMap {
     animation: fadetobottom 1.5s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal none;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     margin-top: 14px;
     margin-left: 5%;
     margin-right: 5%;
@@ -1911,6 +1933,7 @@ input:hover {
     border-radius: 10px;
     transform: translateY(-50%);
   }
+
 
 
   .slider-wrapperX .image-listX {
@@ -2029,21 +2052,22 @@ input:hover {
   }
 
   .containerFichaTecnica {
+    width: 100%;
     margin-top: 60px;
     background-color: var(--azulEScuro);
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
   }
   
   .containerFichaTecnica img {
-    width: 350px;
+    width: 100%;
   }
   
   .textFicha {
-    width: 350px;
+    width: 100%;
     background-color: var(--amarelo);
   }
 
@@ -2154,7 +2178,7 @@ input:hover {
   }
   
   .footer {
-    height: 400px;
+    height: 300px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: var(--azulEScuroForte);
@@ -2166,11 +2190,12 @@ input:hover {
   .logovienna {
     text-align: center;
     align-content: center;
-    width: 30%;
+    width: 100%;
   }
   
   .logovienna img {
-    height: 80px;
+    margin-top: 20px;
+    height: 60px;
   }
   
   .redes {
@@ -2178,12 +2203,14 @@ input:hover {
     flex-direction: row;
     text-align: center;
     align-content: center;
-    width: 30%;
+    justify-content: center;
+    width: 100%;
     font-size: 40px;
     color: var(--branco);
   }
   
   .redes i {
+    font-size: 27px;
     padding: 20px;
   }
   
@@ -2200,7 +2227,12 @@ input:hover {
   .logoevler {
     text-align: center;
     align-content: center;
-    width: 30%;
+    width: 100%;
+  }
+
+  .footerPage p {
+    margin-top: 20px;
+    font-size: 10px;
   }
 
   #formPop {
@@ -2240,6 +2272,30 @@ input:hover {
     margin-top: -35px;
     cursor: pointer;
   }
+
+  .containerSwitch {
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .containerSwitch a {
+    padding: 20px;
+    align-content: center;
+    text-decoration: none;
+    color: var(--branco);
+    text-align: center;
+    height: 55px;
+    background-color: var(--amarelo);
+  }
+  
+  .switch {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
   
 
 }
