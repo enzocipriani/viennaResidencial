@@ -1826,48 +1826,48 @@ input:hover {
   }
 
   .containerGalerryPhoto {
-    margin-left: 0%;
-    margin-right: 0%;
-    width: 100%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%; 
     height: 400px;
-    background-color: pink;
     align-items: center;
-
   }
 
-  .slider-wrapper {
-    height: 400px;
-    background-color: blue;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
 .slider-wrapper .image-list {
-    width: 100%;
-    background-color: red;
     height: 400px;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+    font-size: 0;
+    list-style: none;
     margin-bottom: 0px;
-    scroll-snap-type: x mandatory;
-    display: flex;
-    justify-content: center; 
-    
+    overflow-x: auto;
+    scrollbar-width: none;
+}
 
+  .slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
 }
 
   .slider-wrapper .image-list .image-itemx {
-    
-    background-color: green;
-    width: 280px;
+    width: 225px;
     height: 380px;
   }
 
-  .slider-scrollbar .scrollbar-thumb {
-    width: 20%;
+  .slider-wrapper .image-list .image-itemx img {
+    width: 225px;
+    height: 330px;
+  }
+
+  .slider-wrapper .image-list .image-itemx .containerTextoGalleryPhoto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--azulEScuroForte);
+    padding: 13px;
+    width: 225px;
+    bottom: 0;
   }
 
   .slider-wrapper .slide-button {
@@ -1890,15 +1890,6 @@ input:hover {
     border-radius: 10px;
     transform: translateY(-50%);
   }
-
-  .slider-wrapper .image-list .image-item {
-    width: 225px;
-    height: 330px;
-    object-fit: cover;
-  }
-
-
-
 
   .slider-wrapperX .slide-buttonX {
     margin-left: -30px;
@@ -2018,7 +2009,7 @@ input:hover {
 
   .slider-scrollbar .scrollbar-track {
     background: #ccc;
-    width: 80%;
+    width: 100%;
     height: 2px;
     display: flex;
     align-items: center;
@@ -2038,7 +2029,7 @@ input:hover {
   }
 
   .containerFichaTecnica {
-    margin-top: 300px;
+    margin-top: 60px;
     background-color: var(--azulEScuro);
     margin-right: 5%;
     margin-left: 5%;
