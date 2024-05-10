@@ -311,6 +311,7 @@ background: linear-gradient(
 }
 
 .buttons {
+  cursor: pointer;
   justify-content: space-around;
   display: flex;
   flex-direction: row;
@@ -563,6 +564,7 @@ background: linear-gradient(
 }
 
 .buttonConsultor a {
+  cursor: pointer;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -1464,6 +1466,7 @@ input:hover {
   }
 
   .buttons {
+    cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: space-around;
@@ -1472,6 +1475,7 @@ input:hover {
   }
 
   .buttons a {
+    cursor: pointer;
     margin-top: 20px;
     align-items: center;
     display: flex;
