@@ -1710,14 +1710,14 @@ input:hover {
   .titleDiff h7 {
     text-align: center;
     margin-left: 0;
-    color: var(--branco);
+    color: var(--cinza);
     font-size: 20px;
   }
 
   .titleDiff h2 {
     text-align: center;
     margin-left: 0;
-    color: var(--branco);
+    color: var(--cinza);
   }
 
   .itens {
